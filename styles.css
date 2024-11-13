@@ -1,0 +1,169 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('images/background1.jpg'); /* Add the path to your background image here */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-repeat: no-repeat; /* Prevents tiling */
+    background-attachment: fixed; /* Keeps the background fixed on scroll */
+    background-position: center; /* Centers the image */
+    color: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent background for readability */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+/* Header and Navigation */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 32px;
+    color: #34495e;
+    margin-bottom: 8px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: #34495e;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #34495e;
+    color: #ffffff;
+}
+
+h2 {
+    font-size: 24px;
+    color: #34495e;
+    margin-top: 20px;
+    border-bottom: 2px solid #6c5ce7;
+    padding-bottom: 8px;
+}
+
+/* Unique Styles for Each Page */
+.home header h1 {
+    color: #2980b9;
+}
+
+.biodata header h1 {
+    color: #27ae60;
+}
+
+.resume header h1 {
+    color: #c0392b;
+}
+
+/* Text and Section Styles */
+.intro,
+.contact-info,
+.resume-section {
+    margin-bottom: 25px;
+}
+
+.intro p,
+.contact-info p,
+.resume-section ul li {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+ul li strong {
+    color: #34495e;
+}
+
+/* Connect Section */
+.connect {
+    text-align: center;
+    margin-top: 30px;
+    padding: 15px;
+    background: linear-gradient(to right, #6c5ce7, #0984e3);
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.connect h4 {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.connect a {
+    color: #ffeb3b;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 8px;
+    transition: color 0.3s;
+}
+
+.connect a:hover {
+    color: #ffdf00;
+    text-decoration: underline;
+}
+
+/* Footer and Responsive */
+footer {
+    text-align: center;
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .connect {
+        padding: 10px;
+    }
+}
